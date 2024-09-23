@@ -1,13 +1,16 @@
+import Image from 'next/image';
 
 const Header = () => {
     return (
         <header className="bg-white shadow-md">
             <div className="container mx-auto flex justify-between items-center py-4 px-6">
                 <div className="flex items-center space-x-2">
-                    <img
+                    <Image
                         src="https://www.envioxenvio.es/img/logo.svg"
                         alt="Envio X Envio Logo"
                         className="h-6"
+                        width={50}
+                        height={50}
                     />
                     <span className="font-bold text-2xl text-black-600">ENVIO X ENVIO</span>
                 </div>
@@ -16,7 +19,7 @@ const Header = () => {
                     <a href="https://www.envioxenvio.es/#instant-rate" className="hover:text-blue-500">Instant Rate</a>
                     <a href="https://www.envioxenvio.es/servicios" className="hover:text-blue-500">Servicios</a>
                     <a href="https://www.envioxenvio.es/quienes-somos" className="hover:text-blue-500">Quiénes Somos</a>
-                    <a href="#https://www.envioxenvio.es/blog" className="hover:text-blue-500">Blog</a>
+                    <a href="https://www.envioxenvio.es/blog" className="hover:text-blue-500">Blog</a>
                 </nav>
 
                 <div className="hidden md:block space-x-3">
