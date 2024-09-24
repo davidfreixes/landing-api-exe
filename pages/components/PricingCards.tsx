@@ -13,8 +13,8 @@ import Typography from '@mui/joy/Typography';
 
 export default function PricingCards() {
     return (
-        <Box sx={{ width: "100%", mt: 10 }}>
-            <Typography className="text-[#1C5975]" level="h1" sx={{ textAlign: "center", mb: 5 }}>
+        <Box sx={{ width: "100%", mt: 5 }}>
+            <Typography sx={{ color: '#1C5975', textAlign: "center", mb: 5 }} level="h1">
                 Planes y precios
             </Typography>
 
@@ -132,10 +132,10 @@ export default function PricingCards() {
                 className="hover:scale-110 duration-300"
                 
             >
-                <Chip className="text-[#00DEDE]" size="sm" variant="outlined">
+                <Chip sx={{ color: '#00DEDE' }} size="sm" variant="outlined">
                     PRO
                 </Chip>
-                <Typography className="text-[#00DEDE]" level="h2">PRO</Typography>
+                <Typography sx={{ color: '#00DEDE' }} level="h2">PRO</Typography>
                 <Divider inset="none" />
                 <List
                     size="sm"
@@ -144,31 +144,31 @@ export default function PricingCards() {
                         mx: 'calc(-1 * var(--ListItem-paddingX))',
                     }}
                 >
-                    <ListItem className="text-[#00DEDE]">
+                    <ListItem sx={{ color: '#00DEDE' }}>
                         <ListItemDecorator>
                             <Check />
                         </ListItemDecorator >
                         500 Cotizaciones / mes*
                     </ListItem>
-                    <ListItem className="text-[#00DEDE]">
+                    <ListItem sx={{ color: '#00DEDE' }}>
                         <ListItemDecorator>
                             <Check />
                         </ListItemDecorator>
                         Órdenes ilimitadas
                     </ListItem>
-                    <ListItem className="text-[#00DEDE]">
+                    <ListItem sx={{ color: '#00DEDE' }}>
                         <ListItemDecorator>
                             <Check />
                         </ListItemDecorator>
                         Cashback de rates
                     </ListItem>
-                    <ListItem className="text-[#00DEDE]">
+                    <ListItem sx={{ color: '#00DEDE' }}>
                         <ListItemDecorator>
                             <Check />
                         </ListItemDecorator>
                         Documentación
                     </ListItem>
-                    <ListItem className="text-[#00DEDE]">
+                    <ListItem sx={{ color: '#00DEDE' }}>
                         <ListItemDecorator>
                             <Check />
                         </ListItemDecorator>
@@ -177,7 +177,7 @@ export default function PricingCards() {
                 </List>
                 <Divider inset="none" />
                 <CardActions>
-                    <Typography className="text-[#00DEDE]" level="title-lg" sx={{ mr: 'auto' }}>
+                    <Typography sx={{ color: '#00DEDE',  mr: 'auto'  }} level="title-lg">
                         99€{' '}
                         <Typography sx={{ fontSize: 'sm' }}>
                             / mes

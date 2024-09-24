@@ -33,10 +33,31 @@ const Hero = () => {
             </Typography>
             <Box className="absolute bottom-[20%] left-[50%] -translate-x-1/2 flex justify-center"
             >
-                <Button className="bg-[#1C5975] hover:bg-[#00DEDE] hover:text-black hover:border-black" variant="contained" sx={{ mr: 2, borderRadius: 24, }}>
+                <Button
+                    sx={{
+                        backgroundColor: '#1C5975',
+                        '&:hover': {
+                            backgroundColor: '#00DEDE',
+                            color: 'black',
+                            borderColor: 'black',
+                        },
+                        marginRight: 2,
+                        borderRadius: 24,
+                    }}
+                    variant="contained">
                     Cotiza tus envíos
                 </Button>
-                <Button className="bg-[#1C5975] hover:bg-[#00DEDE] hover:text-black hover:border-black" variant="contained" sx={{ borderRadius: 24 }}>
+                <Button
+                    sx={{
+                        backgroundColor: '#1C5975',
+                        '&:hover': {
+                            backgroundColor: '#00DEDE',
+                            color: 'black',
+                            borderColor: 'black',
+                        },
+                        borderRadius: 24,
+                    }}
+                    variant="contained">
                     Solicitar Demo
                 </Button>
             </Box>

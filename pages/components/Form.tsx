@@ -10,18 +10,25 @@ import {
 
 const Form = () => {
     return (
-        <Paper className="bg-[#1C5975] w-full flex justify-center items-center"
+        <Paper sx={{
+            backgroundColor: '#1C5975',
+            width: '100%',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+        }}
         >
             <Box className="bg-white mt-10 mb-10 max-w-[500px] px-[30px] py-[40px]"
                 sx={{
                     borderRadius: 3,
                 }}
             >
-                <Typography className="font-bold mb-5 text-[#1C5975]"
-                    variant="h5"
-                    component="h2"
-                    gutterBottom
-                    textAlign="center"
+                <Typography variant="h5" component="h2" gutterBottom textAlign="center"
+                    sx={{
+                        fontWeight: 'bold',
+                        marginBottom: 5,
+                        color: '#1C5975',
+                    }}
                 >
                     ¡Déjanos tus datos!
                 </Typography>
@@ -65,14 +72,23 @@ const Form = () => {
                         margin="normal"
                     />
                     <FormControlLabel
-                        control={<Checkbox  />}
+                        control={<Checkbox />}
                         label="Aceptas nuestros Términos y Condiciones"
                         className="mt-5"
                     />
                     <Button
                         variant="contained"
                         fullWidth
-                        className="text-white bg-[#00B0C7] py-15 font-bold hover:bg-[#FFA07A] mt-2 py-[15px]"
+                        sx={{
+                            color: 'white',
+                            backgroundColor: '#00B0C7',
+                            paddingY: '15px',
+                            fontWeight: 'bold',
+                            '&:hover': {
+                                backgroundColor: '#FFA07A',
+                            },
+                            marginTop: 2,
+                        }}
                     >
                         Te llamamos
                     </Button>
