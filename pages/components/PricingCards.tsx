@@ -25,7 +25,8 @@ export default function PricingCards() {
                 justifyContent: 'center',
                 gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 300px), 1fr))',
                 gap: 2,
-                mt: 5
+                mt: 5,
+                mb: 5
             }}
         >
             <Card size="lg" variant="outlined" color="primary" >
