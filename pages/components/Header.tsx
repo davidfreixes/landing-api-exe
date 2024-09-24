@@ -1,6 +1,12 @@
 import Image from 'next/image';
 
-const Header = () => {
+interface HeaderProps {
+    scrollToSection: (sectionRef: React.RefObject<HTMLDivElement>) => void;
+    pricingCardsRef: React.RefObject<HTMLDivElement>;
+    formRef: React.RefObject<HTMLDivElement>;
+}
+
+const Header: React.FC<HeaderProps> = ({ scrollToSection, pricingCardsRef, formRef }) => {
     return (
         <header className="bg-white shadow-md">
             <div className="container mx-auto flex justify-between items-center py-4 px-6">
@@ -16,8 +22,18 @@ const Header = () => {
                 </div>
 
                 <nav className="md:flex space-x-6 font-semibold">
-                    <a href="https://www.envioxenvio.es/#instant-rate" className="text-[#1C5975] hover:text-[#00DEDE]">Instant Rate</a>
-                    <a href="https://www.envioxenvio.es/servicios" className="text-[#1C5975] hover:text-[#00DEDE]">Servicios</a>
+                    <button
+                        onClick={() => scrollToSection(pricingCardsRef)}
+                        className="text-[#1C5975] hover:text-[#00DEDE]"
+                    >
+                        Pricing
+                    </button>
+                    <button
+                        onClick={() => scrollToSection(formRef)}
+                        className="text-[#1C5975] hover:text-[#00DEDE]"
+                    >
+                        Contáctanos
+                    </button>
                     <a href="https://www.envioxenvio.es/quienes-somos" className="text-[#1C5975] hover:text-[#00DEDE]">Quiénes Somos</a>
                     <a href="https://www.envioxenvio.es/blog" className="text-[#1C5975] hover:text-[#00DEDE]">Blog</a>
                 </nav>

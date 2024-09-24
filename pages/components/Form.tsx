@@ -27,7 +27,7 @@ const Form = () => {
                     sx={{
                         fontWeight: 'bold',
                         marginBottom: 5,
-                        color: '#1C5975',
+                        color: '#00DEDE',
                     }}
                 >
                     ¡Déjanos tus datos!

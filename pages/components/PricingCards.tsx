@@ -13,7 +13,7 @@ import Typography from '@mui/joy/Typography';
 
 export default function PricingCards() {
     return (
-        <Box sx={{ width: "100%", mt: 5 }}>
+        <Box sx={{ width: "100%", mt: 10 }}>
             <Typography sx={{ color: '#1C5975', textAlign: "center", mb: 5 }} level="h1">
                 Planes y precios
             </Typography>
@@ -26,7 +26,7 @@ export default function PricingCards() {
                 gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 300px), 1fr))',
                 gap: 2,
                 mt: 5,
-                mb: 5
+                mb: 10
             }}
         >
             <Card size="lg" variant="outlined" color="primary" className="hover:scale-110 duration-300">
