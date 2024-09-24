@@ -29,7 +29,7 @@ export default function PricingCards() {
                 mb: 5
             }}
         >
-            <Card size="lg" variant="outlined" color="primary" >
+            <Card size="lg" variant="outlined" color="primary" className="hover:scale-110 duration-300">
                 <Chip size="sm" variant="outlined" color="primary">
                     POR USO
                 </Chip>
@@ -74,7 +74,7 @@ export default function PricingCards() {
             </Card>
             <Card size="lg" variant="solid"
                 color="neutral" invertedColors
-                sx={{ bgcolor: 'primary.600' }}>
+                sx={{ bgcolor: 'primary.600' }} className="hover:scale-110 duration-300">
                 <Chip size="sm" variant="outlined">
                     BÁSICO
                 </Chip>
@@ -129,6 +129,7 @@ export default function PricingCards() {
                 color="neutral"
                 invertedColors
                 sx={{ bgcolor: 'neutral.900' }}
+                className="hover:scale-110 duration-300"
             >
                 <Chip size="sm" variant="outlined">
                     PRO

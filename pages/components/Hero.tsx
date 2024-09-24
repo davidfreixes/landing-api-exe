@@ -23,7 +23,7 @@ const Hero = () => {
                     top: '40%',
                     left: '50%',
                     transform: 'translate(-50%, -50%)',
-                    fontSize: '75px',
+                    fontSize: '70px',
                     textAlign: 'center',
                     fontWeight: 'bold',
                 }}
