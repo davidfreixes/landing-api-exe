@@ -9,52 +9,21 @@ const Hero = () => {
                 component="img"
                 src="/heroImage.jpg"
                 alt="Imagen de la mainPage"
-                sx={{
-                    width: '100%',
-                    opacity: 0.35,
-                    objectFit: 'cover',
-                    height: '600px',
-                }}
+                className="w-full opacity-35 object-cover h-[600px]"
             />
             <Typography
                 variant="h1"
-                sx={{
-                    position: 'absolute',
-                    top: '40%',
-                    left: '50%',
-                    transform: 'translate(-50%, -50%)',
-                    fontSize: '70px',
-                    textAlign: 'center',
-                    fontWeight: 'bold',
-                }}
+                className="absolute top-[40%] left-1/2 -translate-x-1/2 -translate-y-1/2 text-[70px] text-center font-bold"
             >
                 Transporte Internacional de Mercancías
             </Typography>
             <Typography
                 variant="h4"
-                sx={{
-                    position: 'absolute',
-                    bottom: '35%',
-                    left: '50%',
-                    transform: 'translate(-50%, 0)',
-                    fontSize: '24px',
-                    textAlign: 'center',
-                    fontWeight: 'bold',
-                    color: 'primary',
-                }}
-                
+                className="absolute bottom-[35%] left-[50%] text-[24px] -translate-x-1/2 text-center font-bold text-primary"
             >
                 Especialistas en Grupaje Terrestre por Europa
             </Typography>
-            <Box
-                sx={{
-                    position: 'absolute',
-                    bottom: '20%',
-                    left: '50%',
-                    transform: 'translate(-50%, 0)',
-                    display: 'flex',
-                    justifyContent: 'center',
-                }}
+            <Box className= "absolute bottom-[20%] left-[50%] -translate-x-1/2 flex justify-center"
             >
                 <Button className="bg-[#1C5975] hover:bg-[#00DEDE] hover:text-black hover:border-black" variant="contained" sx={{ mr: 2, borderRadius: 24, }}>
                     Cotiza tus envíos
