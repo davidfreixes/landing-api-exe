@@ -15,21 +15,21 @@ const Header = () => {
                     <span className="font-bold text-2xl text-black-600">ENVIO X ENVIO</span>
                 </div>
 
-                <nav className="md:flex space-x-6 text-blue-900 font-semibold">
-                    <a href="https://www.envioxenvio.es/#instant-rate" className="hover:text-blue-500">Instant Rate</a>
-                    <a href="https://www.envioxenvio.es/servicios" className="hover:text-blue-500">Servicios</a>
-                    <a href="https://www.envioxenvio.es/quienes-somos" className="hover:text-blue-500">Quiénes Somos</a>
-                    <a href="https://www.envioxenvio.es/blog" className="hover:text-blue-500">Blog</a>
+                <nav className="md:flex space-x-6 font-semibold">
+                    <a href="https://www.envioxenvio.es/#instant-rate" className="hover:text-[#00DEDE]">Instant Rate</a>
+                    <a href="https://www.envioxenvio.es/servicios" className="hover:text-[#00DEDE]">Servicios</a>
+                    <a href="https://www.envioxenvio.es/quienes-somos" className="hover:text-[#00DEDE]">Quiénes Somos</a>
+                    <a href="https://www.envioxenvio.es/blog" className="hover:text-[#00DEDE]">Blog</a>
                 </nav>
 
                 <div className="hidden md:block space-x-3">
                     <a href="https://www.envioxenvio.es/contacto">
-                        <button className="border border-blue-500 text-white bg-blue-900 px-4 py-2 rounded-full hover:bg-blue-500">
+                        <button className="border border-blue-500 text-white bg-blue-900 px-4 py-2 rounded-full hover:bg-[#00DEDE] hover:text-black">
                             Contacto
                         </button>
                     </a>
                     <a href="https://www.envioxenvio.es/auth/login?redirect=%2Fapp">
-                        <button className="border border-blue-900 text-blue-900 px-4 py-2 rounded-full hover:bg-blue-50">
+                        <button className="border border-blue-900 text-blue-900 px-4 py-2 rounded-full hover:bg-[#00DEDE]">
                             Área Cliente
                         </button>
                     </a>
