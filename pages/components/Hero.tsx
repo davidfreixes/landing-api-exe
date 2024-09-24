@@ -11,7 +11,7 @@ const Hero = () => {
                 alt="Imagen de la mainPage"
                 sx={{
                     width: '100%',
-                    opacity: 0.5,
+                    opacity: 0.35,
                     objectFit: 'cover',
                     height: '600px',
                 }}
@@ -42,6 +42,7 @@ const Hero = () => {
                     fontWeight: 'bold',
                     color: 'primary',
                 }}
+                
             >
                 Especialistas en Grupaje Terrestre por Europa
             </Typography>
@@ -55,10 +56,10 @@ const Hero = () => {
                     justifyContent: 'center',
                 }}
             >
-                <Button variant="contained" sx={{ mr: 2, borderRadius: 24, }}>
+                <Button className="bg-[#1C5975] hover:bg-[#00DEDE] hover:text-black hover:border-black" variant="contained" sx={{ mr: 2, borderRadius: 24, }}>
                     Cotiza tus envíos
                 </Button>
-                <Button variant="contained" color="primary" sx={{ borderRadius: 24 }}>
+                <Button className="bg-[#1C5975] hover:bg-[#00DEDE] hover:text-black hover:border-black" variant="contained" sx={{ borderRadius: 24 }}>
                     Solicitar Demo
                 </Button>
             </Box>

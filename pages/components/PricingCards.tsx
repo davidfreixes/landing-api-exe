@@ -14,7 +14,7 @@ import Typography from '@mui/joy/Typography';
 export default function PricingCards() {
     return (
         <Box sx={{ width: "100%", mt: 10 }}>
-            <Typography level="h1" sx={{ textAlign: "center", mb: 5 }}>
+            <Typography className="text-[#1C5975]" level="h1" sx={{ textAlign: "center", mb: 5 }}>
                 Planes y precios
             </Typography>
 
