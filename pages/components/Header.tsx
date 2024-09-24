@@ -39,13 +39,12 @@ const Header: React.FC<HeaderProps> = ({ scrollToSection, pricingCardsRef, formR
                 </nav>
 
                 <div className="hidden md:block space-x-3">
-                    <a href="https://www.envioxenvio.es/contacto">
-                        <button className="border text-white bg-[#1C5975] px-4 py-2 rounded-full hover:bg-[#00DEDE] hover:text-black">
-                            Contacto
-                        </button>
-                    </a>
+                    <button className="border text-white bg-[#1C5975] px-4 py-2 rounded-full hover:bg-[#00DEDE] hover:text-black"
+                        onClick={() => scrollToSection(formRef)}>
+                        Contacto
+                    </button>
                     <a href="https://www.envioxenvio.es/auth/login?redirect=%2Fapp">
-                        <button className="border border-[#1C5975] text-blue-900 px-4 py-2 rounded-full hover:bg-[#00DEDE] hover:text-black hover:bg-[#00DEDE] hover:text-black hover:border-[#00DEDE]">
+                        <button className="border border-[#1C5975] text-blue-900 px-4 py-2 rounded-full hover:text-black hover:bg-[#00DEDE] hover:text-black hover:border-[#00DEDE]">
                             Área Cliente
                         </button>
                     </a>

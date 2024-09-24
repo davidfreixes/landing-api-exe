@@ -1,8 +1,12 @@
 import { Box, Typography } from '@mui/material';
 import Button from '@mui/material/Button';
 
+interface HeaderProps {
+    scrollToSection: (sectionRef: React.RefObject<HTMLDivElement>) => void;
+    formRef: React.RefObject<HTMLDivElement>;
+}
 
-const Hero = () => {
+const Hero: React.FC<HeaderProps> = ({ scrollToSection, formRef }) => {
     return (
         <Box sx={{ position: 'relative', }}>
             <Box
@@ -36,6 +40,7 @@ const Hero = () => {
                 <Button
                     sx={{
                         backgroundColor: '#1C5975',
+                        fontSize: '18px',
                         '&:hover': {
                             backgroundColor: '#00DEDE',
                             color: 'black',
@@ -50,6 +55,7 @@ const Hero = () => {
                 <Button
                     sx={{
                         backgroundColor: '#1C5975',
+                        fontSize: '18px',
                         '&:hover': {
                             backgroundColor: '#00DEDE',
                             color: 'black',
@@ -57,7 +63,8 @@ const Hero = () => {
                         },
                         borderRadius: 24,
                     }}
-                    variant="contained">
+                    variant="contained"
+                    onClick={() => scrollToSection(formRef)}>
                     Solicitar Demo
                 </Button>
             </Box>

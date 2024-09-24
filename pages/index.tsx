@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div>
       <Header scrollToSection={scrollToSection} pricingCardsRef={pricingCardsRef} formRef={formRef} />
-      <Hero />
+      <Hero scrollToSection={scrollToSection} formRef={formRef} />
       <div ref={pricingCardsRef}>
         <PricingCards />
       </div>

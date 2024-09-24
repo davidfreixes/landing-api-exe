@@ -26,7 +26,7 @@ export default function PricingCards() {
                 gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 300px), 1fr))',
                 gap: 2,
                 mt: 5,
-                mb: 10
+                mb: 12
             }}
         >
             <Card size="lg" variant="outlined" color="primary" className="hover:scale-110 duration-300">
