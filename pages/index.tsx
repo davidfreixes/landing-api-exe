@@ -1,8 +1,8 @@
 import { useRef } from "react";
-import Form from "./components/Form";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import PricingCards from "./components/PricingCards";
+import Form from "../components/Form";
+import Header from "../components/Header";
+import Hero from "../components/Hero";
+import PricingCards from "../components/PricingCards";
 
 export default function Home() {
   const pricingCardsRef = useRef(null);
